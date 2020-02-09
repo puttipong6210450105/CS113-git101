@@ -1,0 +1,47 @@
+เรื่อง Control Flow
+1.Statements and Blocks
+- expression เป็น statement เมื่อปิดท้ายด้วยเครื่องหาย ;
+- x = 0 เป็น x = 0;
+- เครื่องหมาย {} ร่วมกับ declarations และ statements เข้าด้วยกันเป็น block
+
+2.if-Else
+- if(expression)
+    statement1
+  else
+    statement2
+- จะเขียนในรูป if(expression) แทนที่จะเขียน if(expression != 0)
+
+3.Else-If
+    if (expression1)
+       statement1
+    else if (expression2)
+       statement2
+    else
+       statement3
+
+4.Switch
+- ใช้ในการตรวจสอบเงื่อนไขดูค่าของ expression นั้น match เข้ากับค่าคงที่
+- default เป็น optinal จะมีหรือไม่มีก็ได้
+
+5.Loops - while และ for 
+- รูปแบบของ while 
+   while (expression)
+      statement
+- รูปแบบของ for 
+   for (expr1; expr2;expr3)
+      statement
+
+6.Loops -Do-while
+- จะแตกต่างกับ while และ for 
+เช่น   do 
+         statement
+      while (expression);
+
+7.Break และ Continue 
+- ช่วยให้สามารถควบคุมการวนซ้ำได้มากขึ้น
+- ทำให้โปรแกรมหลุดออกจากลูป for, while และ do-while 
+
+
+
+
+
