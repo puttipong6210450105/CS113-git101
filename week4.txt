@@ -1,0 +1,31 @@
+1.การนิยามฟังก์ชัน(Function Definition)
+- คอมไพเลอร์ภาษา c เป็นคอมไพเลอร์ One-pass
+
+2.Function Phototypes
+- ลักษณะเหมือน function header ของ function definition
+
+3.Function Call - Call by Value 
+- ภาษา c ส่งผ่านค่า parameter ในลักษณะเดียวที่เป็น "pass by value"
+- ภาษา c สามารถส่งผ่านค่าข้อมูลจากผู้เรียกไปฟังก์ชันที่ถูกเรียกใช้ได้
+
+4.Standard Library Functions and Math Library Functions
+- printf, scanf และ getchar เป็นฟังก์ชันที่อยู่ใน Standard Library functions
+- sqrt, exp และ log เป็นฟังก์ชันที่อยู่ใน Math Library functions
+- หากต้องการใช้ Math Library เราควรต้อง #include <math.h>
+
+5.Return Values
+- ฟังก์ชันจะมีการส่งค่ากลับ หรือไม่ก็เป็นฟังก์ชันที่มี return type เป็น void
+- ใช้ void เพื่อคอมไพเลอร์ว่าฟังก์ชันไม่มีการส่งค่าใดๆกลับ   
+- หากเป็นฟังก์ชันมีการส่งค่ากลับ เราใช้ return เพื่อส่งกลับค่าข้อมูล
+
+6.Using Functions as Parameter to Function
+- ค่าที่ได้จากฟังก์ชันสามารถส่งผ่านพารามิเตอร์ของการเรียกใช้อีกฟังก์ชันได้
+
+7.Recursion(การเรียกซ้ำ)
+- ฟังก์ชันสามารถเรียกใช้ตนเองได้ เรียกว่า recursion
+- เรียกตนเอกอยู่ในรูป direct และ indirect
+- เมื่อฟังก์ชันเรียกใช้ตนเอง โปรแกรมจะสำเนาตัวแปรต่างๆ ภายในฟังก์ชัน ขึ้นมาอีกชุด โดยเป็นอิสระจากการถูกเรียกในครั้งก่อนหน้า
+
+8.Function Call และ Stack Frames
+- โปรแกรมสามารถจัดเก็บตัวแปรจำนวนมากในขณะที่โปรแกรมทำงาน ฟังก์ชันจะทำ Stack frame เพื่อเก็บข้อมูลตัวแปร parameter และ ตัวแปร local ที่อยู่ในฟังก์ชัน
+- return address เป็นตำแหน่งของคำสั่งที่จะถูกทำงานหลังจากฟังก์ชันทำงานเสร็จ
