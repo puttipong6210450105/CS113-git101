@@ -1,0 +1,90 @@
+1.การใช้งานตัวแปร
+- ต้องมีการประกาศตัวแปรก่อน 
+เช่น int x ;
+    float y ;
+    x=10;
+    y=2.54;
+1.1)ชื่อตัวแปร(Variable Names)
+- ประกอบด้วยตัวอักขระและตัวเลข โดยอักษรตัวแรกต้องเป็นอักขระ
+- ห้ามใช้ชื่อตัวแปรในภาษา c เช่น if,else,int,float เป็นต้น
+1.2)การตั้งชื่อตัวแปร
+- การตั้งชื่อตัวแปรควรคำนึงถึงในเรื่องการอ่านเข้าใจง่าย
+- ใช้หลักการตั้งตัวแปรในการตั้งชื่อฟังก์ชัน
+
+2.ประเทข้อมูลและขนาด(Data Types and Sizes)
+- char ใช้ความจำ 1 byte และ int ใช้ความจำ 4 byte ทั้งสองตัวแปรเป็นจำนวนเต็ม
+- float ใช้ความจำ 4 byte และ double ใช้ความจำ 8 byte ทั้งสองตัวแปรเป็นจำนวนจิง
+เช่น char x;
+    double y;
+    printf("size of x = %d\n", sizeof(x));
+    printf("size of y = %d\n", sizeof(y));
+3.ค่าคงที่(Constants)
+- ค่าคงที่จำนวนเต็ม
+    an integer constant, ต.ย. 1234
+    a long constant, ต.ย. 123456789l หรือ 123456789L
+- ค่าคงที่จำนวนจริง
+    floating-point constants เช่น 123.4 หรือ 1e-2
+    floating-point constants เช่น ตัวเลขจำนวนเต็มตามด้วย f หรือ F 
+    double constants (ตามด้วย l หรือ L)
+- ค่าคงที่ของเลขฐาน 2 ฐาน 8 ฐาน 16
+    0 เป็นจำนวนเต็มบอกถึงจำนวนที่อยู่เลขฐาน 8 
+    037 = 31 (ในฐาน 10), 0x1f หรือ 0x1F
+- รูปแบบการพิมพ์สำหรับเลขฐาน 8 และ ฐาน16
+    ใช้ %o ในการพิมพ์เลขฐาน 8 
+    ใช้ %x ในการพิมพ์เลขฐาน 16
+- ค่าคงที่ของตัวอักษร (Character Constat)
+    ต.ย. 'x', '0'
+- ค่าคงที่สตริงๅ(String Constant)
+    ต.ย. "This is a sting constant."
+    "" เป็น สตริงเปล่า
+
+4.การประกาศตัวแปร(Variable Declarations)
+- ตัวแปรในภาษา C ต้องมีการประกาศตัวแปรก่อน
+- เป็นการระบุประเภทข้อมูลให้กับตัวแปร
+เช่น int lower, upper
+- กำหนดค่าเริ่มต้นด้วยนิพจน์
+เช่น char c = 'A'+1;
+4.1)การแสดงผลลัพธ์
+    printf() and puts()
+
+5.ตัวดำเนินการทางคณิตศาสตร์(Arithmetic Operators)
+- +,-,*,/,%
+- % ไม่สามารถใช้กับตัวแปรประเภท float และ double ได้
+
+6.Relational Operators และ Logical Operators
+- Relational Operators
+เช่น >
+    <=
+    <
+    <=
+    ==
+    !=
+- Logical Operators
+เช่น &&
+    ||
+    !
+6.1)อาเรย์(Array Introduction)
+- ตัวแปรสามารถเก็บข้อมูลมากกว่า 1 จำนวนที่เป็นประเภทเดียวกัน
+เช่น int a[10];
+
+7.Type Conbersion
+- นำค่าของข้อมูลประเภทต่างๆ มาใช้ Operator ร่วมกัน Compile จะมีการแปลงค่าข้อมูลให้เหมาะสม 
+เช่น i+f แปลงให้เป็ f + f
+- อักขระ <---> ค่าจำนวนเต็ม
+- logic <---> number
+
+8.)Increment and Decrement Operators
+- n++
+- ++n
+- n--
+- --n
+
+9.)Bitwise Operators
+เช่น 0b11110000 & 0b10101010 ---->0b10100000
+    0b11110000 | 0b10101010 ---->0b11111010
+
+10.)Assignment Operators
+- c = getchar() และ c = d = getchar()
+- i = i + 2 ==> i += 2
+
+11.)Conditional Expression
